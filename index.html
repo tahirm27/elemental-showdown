@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <title>Elemental Showdown</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <div class="container">
+        <div class="grid-header">
+            <div class="titlebar">
+                <h1>Elemental Showdown</h1>
+            </div>
+        </div>
+        <div class="grid-main">
+
+            <div class="output-bar">
+                <h2>Result Displayed Here</h2>
+            </div>
+
+            <div class="button-wrapper-outer">
+                <div class="button-wrapper">
+                    <button class="element-button" id="fire"></button>
+                    <button class="element-button" id="water"></button>
+                    <button class="element-button" id="earth"></button>
+                    <button class="element-button" id="wind"></button>
+                </div>
+            </div>
+
+            <div class="tally-bar">
+                <h2>Player Wins: 0 Computer Wins: 0</h2>
+            </div>
+
+        </div>
+        <div class="grid-footer">
+            <button id="help-button">🤔</button>
+            <dialog help-modal>
+                <div id="help-modal-box"> 
+                    Game Rules (First to 5):
+                    <div>Fire beats Earth</div>
+                    <div>Water beats Fire & Earth</div>
+                    <div>Earth beats Wind</div>
+                    <div>Wind beats Water & Fire</div>
+                </div>
+                <button id="close-help-button">👍</button>
+            </dialog>
+        </div>
+    </div>
+
+    
+</body>
+</html>

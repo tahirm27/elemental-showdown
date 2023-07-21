@@ -1,0 +1,415 @@
+@font-face {
+    font-family: "Cartoony";
+    src: url("fonts/Belanosima/Belanosima-Regular.ttf");
+}
+
+.output-bar
+{
+    display: grid;
+    grid-auto-flow: column;
+    place-items: left;
+    height: 80px;
+    width: 700px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: left;
+    top: 30px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.output-bar h2
+{
+    background: linear-gradient(90deg, #ff6961, #A7C7E7, #77DD77, #cfcfc4);
+    font-family: Cartoony;
+    text-transform: uppercase;
+    margin: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 7px;
+    text-align: center;
+    position: relative;
+    bottom: -28px;
+    /* left: 15px; */
+}
+
+.tally-bar
+{
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    height: 80px;
+    width: 700px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+    top: 60px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.tally-bar h2
+{
+    background: linear-gradient(90deg, #ff6961, #A7C7E7, #77DD77, #cfcfc4);
+    font-family: Cartoony;
+    text-transform: uppercase;
+    margin: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 7px;
+    text-align: center;
+    position: relative;
+    bottom: -2px;
+    /* left: 15px; */
+}
+
+.button-wrapper
+{
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    gap: 50px;
+    height: 200px;
+    width: 800px;
+    border-radius: 10px;
+    z-index: 2;
+    overflow: hidden;
+    position: relative;
+}
+
+.button-wrapper-outer
+{
+    text-align: center;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    height: 210px;
+    width:810px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.element-button
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #050505, #111111, #191919, #222222);
+    background-size: 300% 300%;
+    animation: color 1s ease-in-out infinite;
+    backdrop-filter: blur(20px);
+}
+
+.element-button#fire
+{
+    border: 3px solid #ff6961;
+}
+
+.element-button#fire:hover
+{
+    background: #ff6961;
+    transform: scale(1.05);
+}
+
+.element-button#fire::after
+{
+    content: "🔥";
+}
+
+.element-button#fire:hover::after
+{
+    position: relative;
+    left: 2px;
+    content: "Fire";
+    background: linear-gradient(90deg, maroon, red);
+    font-family: Cartoony;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.element-button#water
+{
+    border: 3px solid #A7C7E7;
+}
+
+.element-button#water:hover
+{
+    background: #A7C7E7;
+    transform: scale(1.05);
+}
+
+.element-button#water::after
+{
+    content: "💧";
+}
+
+.element-button#water:hover::after
+{
+    position: relative;
+    left: 2px;
+    content: "Water";
+    background: linear-gradient(90deg, navy, turquoise);
+    font-family: Cartoony;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.element-button#earth
+{
+    border: 3px solid #77DD77;
+}
+
+.element-button#earth:hover
+{
+    background: #77DD77;
+    transform: scale(1.05);
+}
+
+.element-button#earth::after
+{
+    content: "🌱";
+}
+
+.element-button#earth:hover::after
+{
+    position: relative;
+    left: 2px;
+    content: "Earth";
+    background: linear-gradient(90deg, darkgreen, forestgreen);
+    font-family: Cartoony;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.element-button#wind
+{
+    border: 3px solid #cfcfc4;
+}
+
+.element-button#wind:hover
+{
+    background: #cfcfc4;
+    transform: scale(1.05);
+}
+
+.element-button#wind::after
+{
+    content: "💨";
+}
+
+.element-button#wind:hover::after
+{
+    position: relative;
+    left: 2px;
+    content: "Wind";
+    background: linear-gradient(90deg, dimgrey, grey);
+    font-family: Cartoony;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+body
+{
+    background-color: #191919;
+    margin: 0;
+}
+
+.container
+{
+    display: grid;
+    grid-template-rows: 1.5fr 6fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer";
+    min-height: 100vh;
+    width: 100%;
+    background-size: 300% 300%;
+    backdrop-filter: blur(20px);
+}
+
+@keyframes color {
+    0%
+    {
+        background-position: 0% 50%;
+    }
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    100%
+    {
+        background-position: 0% 50%;
+    }
+    
+}
+
+ .grid-header
+{
+    display: grid;
+    place-items: center;
+    text-align: center;
+
+}
+
+.titlebar
+{
+    display: grid;
+    text-align: center;
+    grid-auto-flow: column;
+    place-items: center;
+    height: 70px;
+    width: 810px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.titlebar h1
+{
+    background: linear-gradient(90deg, #ff6961, #A7C7E7, #77DD77, #cfcfc4);
+    font-family: Cartoony;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 15px;
+    text-align: center;
+}
+
+.grid-main
+{
+    display: grid;
+    place-items: center;
+}
+
+.footerbar
+{
+    display: grid;
+    text-align: center;
+    grid-auto-flow: column;
+    place-items: center;
+    height: 30px;
+    width: 150px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+#help-button
+{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    height: 20px;
+    width: 40px;
+    border-radius: 20px;
+    font-family: Cartoony;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    border: 2px solid #FDFD96;
+    position: relative;
+    padding: 0px;
+
+}
+
+#help-button:hover
+{
+    background: #FFFFA6;
+    transform: scale(2);
+}
+
+#help-modal-box
+{
+    font-family: Cartoony;
+    background: linear-gradient(90deg, #ff6961, #A7C7E7, #77DD77, #cfcfc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    overflow-wrap: break-word;
+    
+}
+
+dialog[help-modal]
+{
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: linear-gradient(45deg, #050505, #111111, #191919, #222222);
+    border-radius: 20px;
+    border-width: 4px;
+    border-color: #FFFFA6;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 600px;
+    text-align: center;
+    bottom: 40%;
+    z-index: 5;
+    overflow: hidden;
+    font-family: Cartoony;
+    text-transform: uppercase;
+    
+}
+
+#close-help-button
+{
+    margin-top: 5%;
+    width: 50px;
+    background-color: #FFFFA6;
+    border-radius: 20px;
+    border: 5px;
+    border-color: #FDFD96;
+
+}
+
+#close-help-button:hover
+{
+    transform: scale(1.2);
+}
+
+.grid-footer
+{
+    text-align: center;
+    display: grid;
+    place-items: center;
+}

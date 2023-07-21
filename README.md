@@ -1,1 +1,2 @@
-# rock-paper-scissors
+# elemental-showdown
+This is a videogame in which the user is given four different classical elements (fire, water, earth, wind). Each element has its unique advantages over some other element(s). The user simply selects an element of their choice, and the computer will select theirs to initiate a clash between elements. Whoever reaches 5 successful clashes (wins) first wins the game. The game will then reset after 2.5 seconds to replay if the user is inclined to do so. The game features a modal located on the footer of the webpage for further information regarding the game rules.
