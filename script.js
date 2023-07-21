@@ -1,5 +1,3 @@
-//Generates random int as an index number to fetch element from array as computer choice
-
 document.addEventListener("DOMContentLoaded", function()
 {
 
